@@ -109,12 +109,16 @@ class _FirstPageState extends State<MainPage> {
                                                   color: Color(0xffF993FB)),
                                             ),
                                             const SizedBox(
-                                              width: 18,
+                                              width: 20,
                                             ),
-                                            Text(
-                                              data.pokemon[index].name,
-                                              style: const TextStyle(
-                                                  color: Color(0xffFFFFFF)),
+                                            SizedBox(
+                                              width: 90,
+                                              child: Text(
+                                                data.pokemon[index].name,
+                                                style: const TextStyle(
+                                                  overflow: TextOverflow.ellipsis,
+                                                    color: Color(0xffFFFFFF,)),
+                                              ),
                                             ),
                                           ],
                                         ),
