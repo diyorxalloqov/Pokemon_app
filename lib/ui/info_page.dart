@@ -1,25 +1,25 @@
-import 'package:flutter/material.dart';
-import 'package:pokemon/model/Pokemon_model.dart';
+// import 'package:flutter/material.dart';
+// import 'package:pokemon/model/Pokemon_model.dart';
 
-class InfoPage extends StatelessWidget {
-  final Pokemon data;
+// class InfoPage extends StatelessWidget {
+//   final Pokemon data;
 
-  const InfoPage({super.key, required this.data});
+//   const InfoPage({super.key, required this.data});
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Pokemon info page"),
-      ),
-      body: Column(
-        children: [
-          Text(data.name.toString()),
-          Text(data.id.toString()),
-          Text(data.height.toString()),
-          Image.network(data.img.toString())
-        ],
-      ),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: const Text("Pokemon info page"),
+//       ),
+//       body: Column(
+//         children: [
+//           Text(data.name.toString()),
+//           Text(data.id.toString()),
+//           Text(data.height.toString()),
+//           Image.network(data.img.toString())
+//         ],
+//       ),
+//     );
+//   }
+// }
